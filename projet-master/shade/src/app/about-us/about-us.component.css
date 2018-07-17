@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+
+/* text container */
+
+.why-us .text-container{
+    width:100%;
+    height:600px;
+    padding:50px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#ffdc00;
+}
+
+.why-us .text-container  p{
+    width:65%;
+    text-align:center;
+    margin:0 auto;
+    color:white;
+    font-size:28px;
+    color:#464646;
+    font-size:30px;
+    font-family:Asap;
+    line-height:45px;
+}
+
+
+
+
+
+/* image container */
+
+.why-us .image-container{
+    width:100%;
+    height:600px;
+}
+.why-us .image-container img{
+    width:100%;
+    height:100%;
+}
+.img2{
+    background-size: cover;
+    background-image: url("https://d2sexymrhewzz1.cloudfront.net/sites/default/files/styles/large/public/hero/2017-06/Scape-why-scape-brilliant-buildings_0.jpg");
+}
+.img3{
+    background-size: cover;
+    background-image: url("https://d2sexymrhewzz1.cloudfront.net/sites/default/files/styles/large/public/hero/2017-06/Scape-why-scape-year-lasts-lifetime.jpg");
+}
+.img4{
+    background-size: cover; background-image: url("https://d2sexymrhewzz1.cloudfront.net/sites/default/files/styles/large/public/2016-11/Why%20Scape_Team_1980x880_0.jpg");
+}
+
+
+
+/* giffy container */
+.why-us .gif-container{
+    width:100%;
+    padding:50px 0;
+    background-color:#f6f6f6;
+}
+
+.gif-container .tagline{
+    width:100%;
+    font-size:35px;
+    margin:0px;
+    padding:10px 0;
+    text-align: center;
+}
+
+.gif-container .contain{
+    padding: 80px 0;
+    padding-bottom:0px;
+    width:90%;
+    margin:0 auto;
+}
+.gif-container .gif-content{
+    height:320px;
+    margin:0 auto;
+    width:100%;
+    max-width:280px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.gif-container .gif-content img{
+    height:100px;
+    width:100px;
+    float:none;
+}
+
+.gif-container .gif-content h4{
+    font-size: 20px;
+    font-weight: 400;
+    margin: 30px 0 10px;
+    text-align:center;
+}
+
+.gif-container .gif-content hr{
+    margin: 10px auto 20px;
+    width: 80px;
+    border-width: 0;
+    border-bottom: 1px solid 
+}
+
+.gif-container .gif-content p{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+    text-align: center;
+    color: #464646;
+}

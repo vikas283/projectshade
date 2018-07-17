@@ -1,0 +1,17 @@
+.modal{
+    background-color:#333232b3;;
+}
+button#add-property-btn i span{
+    font-family:'josefin sans';
+    text-transform:capitalize;
+    padding:2px;
+    padding-left:5px;
+}
+#property-form{
+    text-align:left;
+}
+
+#property-form input{
+    width:90%;
+    margin:0 auto;
+}

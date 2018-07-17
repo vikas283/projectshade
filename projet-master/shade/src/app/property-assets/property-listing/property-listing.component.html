@@ -1,0 +1,51 @@
+<div class="property-listing-container">
+  <div class="row filter-tag">
+      <div class="col-md-4 form-group">
+          <label for="filter-price">Filter</label>
+          <input [(ngModel)]="cityName" type="text" class="form-control" id="filter-city" placeholder="Filter with City Name">
+      </div>
+      <div class="col-md-2 form-group">
+          <label for="filter-price">Price</label>
+          <select [(ngModel)]="priceSortOrder" class="form-control" id="filter-price">
+            <option value='0'>None</option>
+            <option value='1'>High to Low</option>
+            <option value='2'>Low to High</option>
+          </select>
+      </div>
+  </div>
+  <hr>
+    <div id="wrap">
+        <div id="columns" class="columns_3">
+
+        <figure class="shadow-lg" *ngFor="let property of props | filterCity:cityName | sortPrice:priceSortOrder ">
+        <img src="https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto,fl_lossy/fc/3056129-inline-s-1-these-beautiful-small-houses-were-each.jpg">
+        <figcaption>
+        <div class="row">
+            <div class="col-8 item home">
+                <i class="fas fa-home">
+                  <span>{{ property.name }}</span>
+                </i>
+            </div>
+            <div class="col-4 item heart">
+                <i class="fas fa-heart"></i>
+            </div>
+          <div class="col-8 item">
+            <i class="fas fa-phone">
+              <span>{{ property.phone }}</span>
+            </i>
+          </div>
+          <div class="col-4 item">
+            <i class="fas fa-rupee-sign">
+              <span title="per month">{{ property.price }}</span>
+            </i>
+          </div>
+          <div class="col-12 item address">
+              <i class="fas fa-map-marker-alt">
+                <h4>{{ property.locality }}</h4> | <h5>{{ property.city }}</h5> | <h6>{{ property.state }}</h6>
+              </i>
+          </div>
+        </div>
+        </figcaption>
+        </figure>
+      </div>
+</div>

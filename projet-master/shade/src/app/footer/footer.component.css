@@ -1,0 +1,116 @@
+.footer .text-area{
+    width:100%;
+    padding:100px 0;
+    background-color:#ffdc00;
+    text-align: center;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.footer .text-area p{
+    margin:0 auto;
+    width:90%;
+    color:#464646;
+    font-size:30px;
+    font-family:Asap;
+    line-height:45px;
+}
+
+@media screen and (min-width: 992px ) and (max-width:1200px) {
+    .footer .text-area{
+        padding:80px 0;
+    }
+
+    .footer .text-area p{
+        font-size:30px;
+        line-height:45px;
+        width:70%;
+    }
+}
+
+@media screen and (min-width: 768px ) and (max-width:992px) {
+    .footer .text-area{
+        padding:60px 0;
+    }
+    .footer .text-area p{
+        font-size:25px;
+        line-height:40px;
+        width:80%;
+    }
+}
+
+@media screen and (min-width: 576px ) and (max-width:768px) {
+    .footer .text-area{
+        padding:60px 0;
+    }
+    .footer .text-area p{
+        font-size:22px;
+        line-height:35px;
+        width:85%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .footer .text-area{
+        padding:60px 0;
+    }
+    .footer .text-area p{
+        font-size:16px;
+        line-height:25px;
+        width:90%;
+    }
+    .footer-container h1{
+        font-size:14px !important;
+    }
+}
+/* footer links */
+.footer-container .content{
+    height:60px;
+    width:100%;
+}
+
+.footer-container h1{
+    margin:0px;
+    font-size:20px;
+    line-height:60px;
+    color:white;
+    font-family:'josefin sans',sans-serif;
+    text-align:center;
+}
+
+.footer-container .copy{
+    background-image:linear-gradient(to right,#bc2929,#b22222);
+}
+
+.footer-container .contact{
+    background-color:rgb(91, 179, 145);
+}
+
+
+.facebook h1,.gmail h1 ,.linked h1{
+    font-size:30px;
+    font-weight:bolder;
+}
+
+.footer-container .facebook{
+    background-color:#3D5B94;
+}
+
+
+.footer-container .gmail{
+    background-color:#c71610;
+}
+
+.footer-container .linked{
+    background-color:#1E83AE;
+}
+
+.footer-container a{
+    text-decoration:none;
+}
+
+.footer-container .link:hover{
+    background-color:black;
+    opacity:0.8;
+}

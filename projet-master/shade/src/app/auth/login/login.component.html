@@ -1,0 +1,26 @@
+<div class="container">
+    <form (ngSubmit)="loginUser()" #f="ngForm">
+      <div class="user-data" ngModelGroup="Unfilled" #usrData="ngModelGroup">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input ngModel name='email' type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" email   #email="ngModel" required>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        <span class="help-block" *ngIf="!email.valid && email.touched">Enter Valid email</span>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input ngModel name='password'   required type="password" class="form-control" id="password"  placeholder="Password" #password="ngModel" minlength="4">
+        <div *ngIf="!password.valid && password.touched">Incorrect</div>
+      </div>
+     
+    </div>
+    
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" required> 
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Login</button>
+    </form>
+  </div>
